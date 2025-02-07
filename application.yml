@@ -3,6 +3,9 @@
 #    service-url:
 #      defaultZone: http://localhost:8761/eureka/
 
+config:
+  name: v3
+
 spring:
   main:
     allow-circular-references: true
