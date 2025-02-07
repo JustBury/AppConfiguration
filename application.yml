@@ -14,11 +14,15 @@ spring:
         client:
           registration:
             keycloak:
-              client-id: test_client
-              client-secret: V6YhT2TH5UsT5b7dpR15jX9OksE8HtZM
+             # client-id: test_client
+              client-id: test_security_client
+             # client-secret: V6YhT2TH5UsT5b7dpR15jX9OksE8HtZM
+              client-secret: yKYtR8ZrLjEKuINzhBsDtNMoKY7NLUHf
               scope: openid
               authorization-grant-type: client_credentials
-              token-uri: http://localhost:8080/realms/test_realm/protocol/openid-connect/token
+             # token-uri: http://localhost:8080/realms/test_realm/protocol/openid-connect/token
+              token-uri: http://kube.local/keycloak/realms/test_security_realm/protocol/openid-connect/token
           provider:
             keycloak:
-              issuer-uri: http://localhost:8080/realms/test_realm
+             # issuer-uri: http://localhost:8080/realms/test_realm
+              issuer-uri: http://kube.local/keycloak/realms/test_security_realm
